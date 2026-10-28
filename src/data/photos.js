@@ -8,7 +8,7 @@ export const PHOTO_CREDITS = [
   { file: 'cerdo.jpg', author: 'Иван Григорьев', url: 'https://www.pexels.com/photo/pork-chops-and-rice-with-vegetables-decorated-with-parsley-19362399/' },
   { file: 'pavo.jpg', author: 'alleksana', url: 'https://www.pexels.com/photo/roasted-chicken-breasts-with-sauce-on-the-side-6107756/' },
   { file: 'atun.jpg', author: 'Nadin Sh', url: 'https://www.pexels.com/photo/top-view-of-a-poke-bowl-with-rice-fish-and-vegetables-26390891/' },
-  { file: 'huevo.jpg', author: 'Nadin Sh', url: 'https://www.pexels.com/photo/delicious-breakfast-plate-with-scrambled-eggs-38516089/' },
+  { file: 'huevo.jpg', author: 'sandrin', url: 'https://www.pexels.com/photo/delicious-breakfast-with-toast-and-scrambled-eggs-28406391/' },
   { file: 'avena.jpg', author: 'Polina Tankilevitch', url: 'https://www.pexels.com/photo/oatmeal-with-fresh-fruits-in-a-bowl-with-spoon-4725744/' },
   { file: 'yogur.jpg', author: 'Enisa Halidi', url: 'https://www.pexels.com/photo/delicious-greek-yogurt-with-fresh-fruits-and-honey-29516115/' },
   { file: 'snack-fruta.jpg', author: 'Lisa Fotios', url: 'https://www.pexels.com/photo/bread-with-banana-slices-and-peanut-butter-20605006/' },
