@@ -1,8 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="100" fill="#101518"/>
-  <circle cx="256" cy="256" r="176" fill="none" stroke="#2a3238" stroke-width="30"/>
-  <circle cx="256" cy="256" r="176" fill="none" stroke="#00f19f" stroke-width="30"
-    stroke-dasharray="828" stroke-dashoffset="230" stroke-linecap="round"
-    transform="rotate(-90 256 256)"/>
-  <text x="256" y="300" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="190" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+  <rect width="512" height="512" rx="100" fill="#000000"/>
+  <g fill="#00f19f">
+    <!-- cuerpo del puño: bloque diagonal grueso, muñeca abajo-izq, nudillos arriba-der -->
+    <path d="
+      M 118 392
+      L 118 330
+      L 168 270
+      L 150 240
+      L 196 196
+      L 216 222
+      L 258 180
+      L 240 152
+      L 286 112
+      L 320 156
+      L 340 134
+      L 372 172
+      L 330 212
+      L 296 176
+      L 254 216
+      L 274 244
+      L 232 286
+      L 210 258
+      L 180 288
+      L 198 316
+      L 160 356
+      L 160 392
+      Z"/>
+    <!-- pulgar -->
+    <path d="M 118 330 L 90 352 L 90 400 L 130 414 L 160 392 L 160 356 Z"/>
+  </g>
 </svg>

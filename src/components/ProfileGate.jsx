@@ -9,13 +9,12 @@ export default function ProfileGate({ onSelect }) {
   return (
     <div className="h-full flex flex-col items-center justify-center px-6" style={{ background: 'var(--bg)' }}>
       <div className="mb-10 text-center">
-        <div
-          className="w-20 h-20 rounded-2xl mx-auto mb-4 flex items-center justify-center text-3xl font-bold"
-          style={{ background: 'var(--accent)', color: 'var(--accent-ink)' }}
-        >
-          🍽️
-        </div>
-        <h1 className="text-2xl font-semibold" style={{ color: 'var(--text)' }}>Ración</h1>
+        <img
+          src={`${import.meta.env.BASE_URL}icons/icon-192.png`}
+          alt="Knockout Kitchen"
+          className="w-20 h-20 rounded-2xl mx-auto mb-4"
+        />
+        <h1 className="text-2xl font-semibold" style={{ color: 'var(--text)' }}>Knockout Kitchen</h1>
         <p className="text-sm mt-1" style={{ color: 'var(--text-dim)' }}>¿Quién eres?</p>
       </div>
 

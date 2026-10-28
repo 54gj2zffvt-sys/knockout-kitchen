@@ -71,7 +71,7 @@ export default function MoreScreen({ profile, onChangeProfile, onOpenTravel }) {
           <Toggle label="Agua (cada 90 min)" checked={notifs.agua} onClick={() => toggleNotif('agua')} />
         </div>
         {permState === 'denied' && (
-          <p className="text-xs px-1" style={{ color: 'var(--warn)' }}>Las notificaciones están bloqueadas para esta app — actívalas en Ajustes del iPhone → Ración → Notificaciones.</p>
+          <p className="text-xs px-1" style={{ color: 'var(--warn)' }}>Las notificaciones están bloqueadas para esta app — actívalas en Ajustes del iPhone → Knockout Kitchen → Notificaciones.</p>
         )}
         <p className="text-xs px-1 mt-2" style={{ color: 'var(--text-dim)' }}>
           Honesto: esto funciona bien mientras la app está abierta o recién en segundo plano. El iPhone no deja avisar a una hora exacta con la app completamente cerrada sin un servidor que las dispare — tener Supabase conectado no activa esto solo, haría falta programar ese envío aparte más adelante. Mientras tanto, para una alarma 100% confiable, usar también los Recordatorios nativos del iPhone a esas horas es la alternativa más segura.
@@ -114,7 +114,7 @@ export default function MoreScreen({ profile, onChangeProfile, onOpenTravel }) {
         </p>
       </Section>
 
-      <p className="text-center text-xs mt-6" style={{ color: 'var(--text-dim)' }}>Ración · v1 (Etapas 1-3)</p>
+      <p className="text-center text-xs mt-6" style={{ color: 'var(--text-dim)' }}>Knockout Kitchen · v1</p>
     </div>
   )
 }

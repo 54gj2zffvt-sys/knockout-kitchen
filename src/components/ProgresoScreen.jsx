@@ -308,7 +308,7 @@ function MonthSummaryButton({ weeks }) {
   const [copied, setCopied] = useState(false)
 
   const buildText = () => {
-    const lines = ['Resumen del mes — Ración (Martín)', '']
+    const lines = ['Resumen del mes — Knockout Kitchen (Martín)', '']
     weeks.forEach((w) => {
       lines.push(`Semana del ${fmt(w.startISO)}: ${w.pctMealsDone}% comidas, ${w.avgKcal}/${w.avgTargetKcal} kcal/día${w.weightAvg ? `, peso promedio ${w.weightAvg}kg` : ''}`)
     })
