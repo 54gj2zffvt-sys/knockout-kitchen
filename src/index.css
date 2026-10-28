@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Paleta oficial — ver /nutriologo-mma/sistema-de-diseno.md (fuente de verdad única,
+   compartida con la futura app de entrenamiento de Martín). Modo oscuro = principal. */
+
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Base (oscuro, por defecto) */
+  --bg: #101518;
+  --bg-gradient: linear-gradient(180deg, #283339 0%, #101518 100%);
+  --surface: #1a2025;
+  --surface-2: #20272d;
+  --border: #2a3238;
+  --text: #ffffff;
+  --text-dim: #8c9aa3;
+  --accent: #00f19f;
+  --accent-ink: #00170f; /* texto oscuro legible sobre el acento turquesa */
+
+  /* Nutrientes (fijos en toda la app, no cambian entre claro/oscuro) */
+  --kcal: #00f19f;
+  --protein: #ff5a6e;
+  --carbs: #ffc93c;
+  --fat: #b18cff;
+  --water: #4fc3f7;
+
+  /* Estados */
+  --ok: #16ec06;
+  --mid: #ffde00;
+  --danger: #ff0026;
+  --warn: #ff0026; /* alias retrocompatible */
+}
+
+:root[data-theme='light'] {
+  --bg: #f7f8f9;
+  --bg-gradient: none;
+  --surface: #ffffff;
+  --surface-2: #eef0f1;
+  --border: #e4e7ea;
+  --text: #0b1114;
+  --text-dim: #5b6670;
+  --accent: #00c98a;
+  --accent-ink: #00170f;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --bg: #f7f8f9;
+    --bg-gradient: none;
+    --surface: #ffffff;
+    --surface-2: #eef0f1;
+    --border: #e4e7ea;
+    --text: #0b1114;
+    --text-dim: #5b6670;
+    --accent: #00c98a;
+    --accent-ink: #00170f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-gradient, var(--bg)), var(--bg);
+  background-color: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+@keyframes food-img-in {
+  from { opacity: 0; transform: scale(1.04); }
+  to { opacity: 1; transform: scale(1); }
+}
+.food-img {
+  animation: food-img-in 0.5s ease-out both;
+}
